@@ -7,7 +7,7 @@ This project implements public key cryptography using the SS algorithm, enabling
 
 ## Features
 
-- **Key Generation**: Generates a pair of public and private keys using the RSA algorithm.
+- **Key Generation**: Generates a pair of public and private keys using the SS algorithm.
 - **Encryption**: Secures plaintext messages into ciphertext using the public key.
 - **Decryption**: Recovers plaintext messages from ciphertext using the private key.
 - Implements key cryptographic concepts such as modular arithmetic and random state management.
@@ -73,7 +73,7 @@ Example:
 - **`decrypt.c`**: Decrypts ciphertext messages using a private key.
 - **`numtheory.c`**: Provides number-theoretic utilities, such as modular exponentiation.
 - **`randstate.c`**: Manages random state for cryptographic operations.
-- **`ss.c`**: Implements shared components of the RSA cryptographic process.
+- **`ss.c`**: Implements shared components of the SS cryptographic process.
 - **`Makefile`**: Simplifies compilation of the project.
 
 ---
