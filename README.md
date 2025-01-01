@@ -1,5 +1,5 @@
 
-# RSA Cryptography Project
+# SS Cryptography Project
 
 This project implements public key cryptography using the SS algorithm, enabling key generation, encryption, and decryption.
 
