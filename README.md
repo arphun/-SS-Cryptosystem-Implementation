@@ -1,7 +1,7 @@
 
 # RSA Cryptography Project
 
-This project implements public key cryptography using the RSA algorithm, enabling key generation, encryption, and decryption.
+This project implements public key cryptography using the SS algorithm, enabling key generation, encryption, and decryption.
 
 ---
 
@@ -37,31 +37,31 @@ This generates the following executable files:
 ### Key Generation
 To generate public and private keys:
 ```bash
-./keygen -p <public_key_file> -s <private_key_file>
+./keygen -b <bits> -i <iterations> -n <public_key_file> -d <private_key_file> -s <seed> -v
 ```
 Example:
 ```bash
-./keygen -p pubkey.pem -s privkey.pem
+./keygen -b 256 -i 100 -n public.key -d private.key -s 12345 -v
 ```
 
 ### Encryption
 To encrypt a message:
 ```bash
-./encrypt -i <input_file> -o <output_file> -k <public_key_file>
+./encrypt -i <input_file> -o <output_file> -n <public_key_file>
 ```
 Example:
 ```bash
-./encrypt -i message.txt -o encrypted.bin -k pubkey.pem
+./encrypt -i message.txt -o encrypted.bin -n pubkey.pem
 ```
 
 ### Decryption
 To decrypt a message:
 ```bash
-./decrypt -i <input_file> -o <output_file> -k <private_key_file>
+./decrypt -i <input_file> -o <output_file> -n <private_key_file>
 ```
 Example:
 ```bash
-./decrypt -i encrypted.bin -o decrypted.txt -k privkey.pem
+./decrypt -i encrypted.bin -o decrypted.txt -n privkey.pem
 ```
 
 ---
